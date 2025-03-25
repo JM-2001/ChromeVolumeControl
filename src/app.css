@@ -1,0 +1,250 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+  color-scheme: light dark;
+  --primary-text-color: #ffffffde;
+  --primary-bg-color: #242424;
+  --primary-blue: #2a8de4;
+  --primary-blue-light: #5ea8ea;
+  --primary-margin: 0.125rem;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+#app {
+  max-width: 500px;
+  min-width: 90vw;
+  /*   margin: 0 auto;*/
+  padding: 1rem;
+  background-color: #213547;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.title-container {
+  margin: 0 0 0.5rem 0;
+}
+
+.description {
+  font-size: 0.8rem;
+}
+
+.small-text {
+  font-size: 0.7rem;
+}
+
+.audio-controller,
+.loading-container,
+.no-audio-container {
+  /* border-radius: 1rem; */
+  border: 0.25rem solid #3e6e99;
+  padding: 0.5rem;
+  /* background-color: var(--primary-bg-color); */
+  /* margin: 0.5rem 0; */
+}
+
+.audio-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*   flex-wrap: wrap;
+ */
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: var(--primary-margin);
+  /* background-color: cadetblue; */
+  height: 2rem;
+}
+
+.audio-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  /*   flex-wrap: wrap;
+ */
+  gap: 5px;
+  width: calc(100% - 2rem);
+  height: inherit;
+}
+
+.audio-name h2 {
+  text-overflow: ellipsis;
+  line-height: normal;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  /*   height: 100%; */
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.tab-icon-container {
+  /* width: 2rem; */
+  height: 2rem;
+}
+
+.tab-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.collapsible-btn {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.collapsible-icon {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+    hue-rotate(250deg) brightness(111%) contrast(101%);
+  transition: transform 0.3s ease;
+}
+
+.collapsible-icon:hover {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(89%) saturate(3313%)
+    hue-rotate(187deg) brightness(94%) contrast(90%);
+}
+
+.audio-controls {
+  /* background-color: #aeb775; */
+  display: block;
+}
+
+.volume-info {
+  margin-top: var(--primary-margin);
+  /* background-color: #b88270; */
+}
+
+.form-group,
+.form-group-grid {
+  margin: var(--primary-margin) 0;
+}
+
+.volume-range {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.volume-range:hover,
+.volume-range::-webkit-slider-thumb,
+.volume-range::-webkit-slider-thumb:hover,
+.volume-range::-webkit-slider-runnable-track,
+.volume-range::-webkit-slider-runnable-track:hover {
+  outline: none;
+}
+
+/* Hide the default datalist display that browsers might show */
+.volume-range::-webkit-list-button {
+  display: none;
+}
+
+/* datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 100%;
+}
+
+datalist option {
+  padding: 0;
+  rotate: 270deg;
+} */
+
+.ticks-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -4px;
+}
+
+.tick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 20px;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+/* Adjust the first and last tick to align with slider edges */
+.tick:first-child {
+  margin-left: -2px;
+}
+
+.tick:nth-child(2) {
+  margin-left: -2px;
+}
+
+.tick:nth-child(3) {
+  margin-left: -2px;
+}
+
+.tick:nth-child(4) {
+  margin-left: -2px;
+}
+
+.tick:last-child {
+  margin-right: 0px;
+}
+
+.tick-label {
+  font-size: 0.8rem;
+}
+
+.form-group-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.5rem;
+}
+
+.button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--primary-blue);
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--primary-blue-light);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
