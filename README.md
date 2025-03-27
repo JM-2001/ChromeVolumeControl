@@ -7,6 +7,10 @@
 
 **Chrome Volume Controller** allows you to set volume levels per tab and popups in Chrome. You can control the volume and you adjust it using the range slider. Furthermore, it is able to remember the volume levels of each tab and popups.
 
+<div align="center">
+  <img src="https://github.com/JM-2001/ChromeVolumeControl/blob/main/showcase.gif?raw=true" align="center" height="250px">
+</div>
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -37,7 +41,7 @@ Have a Chromium based browser installed.
 
 Here are some steps on downloading and installing the extension.
 
-1. Download the zip file and save it to your device.
+1. Download the [zip file](https://github.com/JM-2001/ChromeVolumeControl/raw/refs/heads/main/chromevolumecontroller.zip) and save it to your device.
 2. Unzip the file and save it on your device.
 3. Open the `Extensions` page `chrome://extensions/` in the browser and turn on the `Developer mode`.
 4. Click on the `Load unpacked` button and select the directory where the extension is placed.
